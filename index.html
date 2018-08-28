@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selouse</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div id="search">
+        <input type="text" placeholder="Address" id="addr-input">
+        <input type="number" class="min price" placeholder="Min. Price" id="min-p-input">
+        <input type="number" class="max price" placeholder="Max Price" id="max-p-input">
+        <input type="number" class="min room" placeholder="Min. Rooms" id="min-r-input">
+        <input type="number" class="max room" placeholder="Max Rooms" id="max-r-input">
+
+        <div class="check-group">
+            <input class="form-radio" type="checkbox" name="immediate" id="immed-y">
+            <label for="immediate">Immediate</label>
+        </div>
+        <div class="check-group">
+            <input class="form-radio" type="checkbox" name="parking" id="park-y">
+            <label for="parking">Parking</label>
+        </div>
+
+        <button>Find Apartments</button>
+    </div>
+
+    <hr>
+
+    <div id="results"></div>
+
+    <!-- Your Code Here -->
+    <!-- You should start doing handlebar stuff here -->
+    <!-- Your Code Here -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="apt-data.js"></script>
+    <script src="apt-filter.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
